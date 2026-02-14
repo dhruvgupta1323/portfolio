@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhruv Gupta | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.5);
+position:sticky;
+top:0;
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h1{
+color:#60a5fa;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:50px;
+padding:100px 20px;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:220px;
+border-radius:50%;
+border:4px solid #60a5fa;
+box-shadow:0 0 30px rgba(96,165,250,0.5);
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.hero-text h2{
+font-size:45px;
+background:linear-gradient(90deg,#60a5fa,#a78bfa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+margin-top:10px;
+font-size:20px;
+opacity:.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+border-radius:30px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* SECTION */
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+section h2{
+color:#60a5fa;
+margin-bottom:30px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.08);
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skills span{
+background:#1e293b;
+padding:10px 20px;
+border-radius:20px;
+}
+
+/* PROJECT GRID */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* CONTACT */
+
+.contact a{
+display:block;
+margin:10px 0;
+color:#60a5fa;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<h1>My Portfolio</h1>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="iit image.jpg" alt="Dhruv">
+
+<div class="hero-text">
+
+<h2>Dhruv Gupta</h2>
+
+<p>AI/ML Student • Python Developer • Content Creator</p>
+
+<a href="resume.pdf" class="btn">Download Resume</a>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am a B.Tech Computer Science student specializing in AI/ML. I am passionate about building intelligent systems using Python, Machine Learning, and Computer Vision. I have worked on real-world projects including fraud detection systems, gesture-controlled hardware, and AI automation solutions.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>Python</span>
+<span>Machine Learning</span>
+<span>Computer Vision</span>
+<span>TensorFlow</span>
+<span>PyTorch</span>
+<span>FastAPI</span>
+<span>OpenCV</span>
+<span>ESP32</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>GitHub</span>
+<span>Video Editing</span>
+<span>Photo Editing</span>
+<span>Graphic Design</span>
+<span>Content Creation</span>
+<span>Canva</span>
+<span>Photoshop</span>
+<span>Premiere Pro</span>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>HPCL Lead Intelligence Agent</h3>
+<p>Built AI-powered automation backend with real-time notification system and intelligent decision engine with IoT integration.</p>
+</div>
+
+<div class="card">
+<h3>Gesture Controlled Bulb</h3>
+<p>AI system to control real bulb using hand gestures with MediaPipe and ESP32.</p>
+</div>
+
+<div class="card">
+<h3>ATM Fraud Detection System</h3>
+<p>Machine learning system to detect fraudulent ATM transactions using FastAPI backend.</p>
+</div>
+
+<div class="card">
+<h3>Spam Detection API</h3>
+<p>NLP spam classifier using TF-IDF and scikit-learn with FastAPI deployment.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<a href="mailto:dhruvgupta135790@gmail.com">Email: dhruvgupta135790@gmail.com</a>
+
+<a href="tel:8852021323">Phone: +91 8852021323</a>
+
+<a href="https://github.com/dhruvgupta1323">GitHub: github.com/dhruvgupta1323</a>
+
+<a href="https://www.linkedin.com/in/dhruv-gupta-885b9a317/">LinkedIn: dhruv-gupta</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Dhruv Gupta | Portfolio
+
+</footer>
+
+</body>
+</html>
